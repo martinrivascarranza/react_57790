@@ -1,28 +1,11 @@
-import React from 'react'
-import Nav from './components/Nav'
-//import Footer from './components/Footer'
-import Productos from './components/Productos'
-import {Header, Footer} from './components/Generico'
-
-
-function Layout(props) {
-  return (
-  <h1>{props.titulo}</h1>
-  )
-}
-
-
-
-
+import SimpleForm from "./components/SimpleForm"
+import ContadorDeVueltas from "./components/ContadorDeVueltas"
 
 function App() {
- return (
+  return (
     <>
-    <Layout titulo = 'Bienvenidos'/>
-      {/*<Header titulo='lo de tito' subtitulo='Las mejores bicicletas'/>
-      <Nav />
-      <Productos />
-      <Footer />*/}
+   
+    <ContadorDeVueltas/>
     </>
   )
 }

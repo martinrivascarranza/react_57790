@@ -8,7 +8,7 @@ function CounterApp() {
     counter3: 30
    })
 
-  const {counter1, counter2, counter3} = state
+  const {counter1, counter2, counter3} = state //destructuracion destructuring
 
   const handleClick = () => {
    // setCont(count => count + 1) // tambien puede ser SetCount(count + 1)
