@@ -25,9 +25,11 @@ function ItemListContainer({ greeting }) {
             {products.map(product => (
               <div key={product.id} className="col-3">
                 <div className="card">
+                  <img src={product.img} alt={product.name} className="card-img-top" />
                   <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-text">{product.description}</p>
+                    <p className="card-text">${product.price}</p>
                   </div>
                 </div>
               </div>
@@ -40,4 +42,3 @@ function ItemListContainer({ greeting }) {
 }
 
 export default ItemListContainer;
-

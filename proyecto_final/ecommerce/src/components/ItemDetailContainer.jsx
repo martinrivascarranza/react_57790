@@ -28,10 +28,12 @@ function ItemDetailContainer() {
       <div className="row">
         <div className="col">
           <div className="card">
+            <img src={product.img} alt={product.name} className="card-img-top" />
             <div className="card-body">
               <h5 className="card-title">{product.name}</h5>
               <p className="card-text">{product.description}</p>
-              <ItemCount stock={10} initial={1} onAdd={handleAdd} />
+              <p className="card-text">${product.price}</p>
+              <ItemCount stock={product.stock} initial={1} onAdd={handleAdd} />
             </div>
           </div>
         </div>
